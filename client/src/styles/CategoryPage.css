@@ -1,0 +1,96 @@
+/* Halaman Kategori */
+.kategori-page {
+    background: #f2f2f2;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #d9d9d9;
+    padding: 10px 20px;
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    background: #f28b30;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    background: black;
+    border-radius: 50%;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-bar input {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  /* Kontainer Kategori */
+  .kategori-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .kategori-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .kategori-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .kategori-card button {
+    background: #f28b30;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .kategori-card button:hover {
+    background: #ff9d4d;
+  }
+  

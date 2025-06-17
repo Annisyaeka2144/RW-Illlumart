@@ -1,0 +1,124 @@
+.license-page * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.license-page .container {
+  display: flex;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.license-page .sidebar {
+  width: 220px;
+  background-color: #d9d9d9;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.license-page .logoSection {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.license-page .logoIcon {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.license-page .logoText {
+  color: orange;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Sidebar menu baru */
+.license-page .sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.license-page .sidebar-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.license-page .sidebar-link:hover {
+  background-color: #c7c7c7;
+}
+
+.license-page .sidebar-link.active {
+  background-color: #bcbcbc;
+}
+
+/* Main Content */
+.license-page .mainContent {
+  flex: 1;
+  padding: 30px;
+  background-color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow-y: auto;
+}
+
+/* Table */
+.license-page .licenseTable {
+  margin-top: 20px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.license-page .tableHeader {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #d9d9d9;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.license-page .licenseItem {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 20px;
+  background-color: #e6e6e6;
+  border-bottom: 2px solid white;
+}
+
+.license-page .licenseItem:last-child {
+  border-bottom: none;
+}
+
+/* Ikon dummy */
+.license-page .icon-home::before {
+  content: "🏠";
+}
+.license-page .icon-pencil::before {
+  content: "✏️";
+}
+.license-page .icon-file::before {
+  content: "📄";
+}
+.license-page .icon-dollar::before {
+  content: "💵";
+}
+.license-page .icon-bell::before {
+  content: "🔔";
+}

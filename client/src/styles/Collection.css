@@ -1,0 +1,104 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, .koleksi-saya-container {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Navbar (sama seperti DashboardHome.css) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ddd;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.navbar-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-center {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid black;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* Content */
+.koleksi-saya-content {
+  padding: 20px 30px;
+}
+
+.koleksi-saya-content h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* Grid koleksi */
+.koleksi-saya-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Card koleksi */
+.koleksi-saya-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.koleksi-saya-card:hover {
+  transform: scale(1.05);
+}
+
+.koleksi-saya-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.koleksi-saya-info {
+  padding: 15px;
+}
+
+.koleksi-saya-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.koleksi-saya-email {
+  font-size: 14px;
+  color: #666;
+}

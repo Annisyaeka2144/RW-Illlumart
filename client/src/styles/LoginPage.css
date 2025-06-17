@@ -1,0 +1,106 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, .login-container {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Membuat container login memiliki posisi relatif */
+}
+
+.login-header {
+  position: absolute; /* Membuat header tetap di kiri atas */
+  top: 20px; /* Menyesuaikan jarak dari atas */
+  left: 20px; /* Menyesuaikan jarak dari kiri */
+  display: flex;
+  align-items: center;
+}
+
+.login-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.login-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: orange;
+}
+
+.login-form-container {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  width: 90%;
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.login-heading {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  font-size: 16px;
+}
+
+.login-button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: darkorange;
+}
+
+.login-links {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.forgot-password {
+  color: orange;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.register-link {
+  color: orange;
+  text-decoration: none;
+}

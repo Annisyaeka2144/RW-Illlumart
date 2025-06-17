@@ -1,0 +1,150 @@
+/* Isolasi CSS hanya untuk halaman income */
+.pendapatan-page * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pendapatan-page .container {
+  display: flex;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.pendapatan-page .sidebar {
+  width: 220px;
+  background-color: #d9d9d9;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.pendapatan-page .logoSection {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pendapatan-page .logo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-color: #f4a261;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.pendapatan-page .brand {
+  color: orange;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.pendapatan-page .sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pendapatan-page .sidebar-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pendapatan-page .sidebar-link.active {
+  background-color: #bcbcbc;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.pendapatan-page .mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow-y: auto;
+}
+
+.pendapatan-page .header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.pendapatan-page .profileIcon {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.pendapatan-page .content {
+  padding: 20px 30px;
+}
+
+.pendapatan-page .table {
+  margin-top: 20px;
+}
+
+.pendapatan-page .tableHeader {
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.pendapatan-page .tableRow {
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.pendapatan-page .karyaInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pendapatan-page .karyaImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+/* Icon style sesuai notifpage.css */
+.pendapatan-page .icon-home::before {
+  content: "🏠";
+}
+.pendapatan-page .icon-pencil::before {
+  content: "✏️";
+}
+.pendapatan-page .icon-file::before {
+  content: "📄";
+}
+.pendapatan-page .icon-dollar::before {
+  content: "💵";
+}
+.pendapatan-page .icon-bell::before {
+  content: "🔔";
+}

@@ -1,0 +1,128 @@
+/* Halaman Kategori Puisi */
+.kategori-puisi-page {
+  background: #f2f2f2;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.kategori-puisi-page .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #d9d9d9;
+  padding: 10px 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+.kategori-puisi-page .logo {
+  width: 40px;
+  height: 40px;
+  background: #f28b30;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kategori-puisi-page .nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.kategori-puisi-page .profile-icon {
+  width: 40px;
+  height: 40px;
+  background: black;
+  border-radius: 50%;
+}
+
+/* Title */
+.kategori-puisi-page .kategori-title {
+  font-size: 24px;
+  margin: 20px;
+}
+
+/* List Puisi */
+.kategori-puisi-page .puisi-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.kategori-puisi-page .puisi-card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.kategori-puisi-page .license {
+  color: #007bff;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.kategori-puisi-page .puisi-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.kategori-puisi-page .author {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.kategori-puisi-page .rating {
+  font-size: 14px;
+  color: orange;
+  margin-bottom: 5px;
+}
+
+.kategori-puisi-page .rating-count {
+  color: black;
+  margin-left: 5px;
+}
+
+.kategori-puisi-page .description {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.kategori-puisi-page .puisi-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kategori-puisi-page .price {
+  font-weight: bold;
+}
+
+.kategori-puisi-page .buy-button {
+  background: #f28b30;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.kategori-puisi-page .buy-button:hover {
+  background: #ff9d4d;
+}

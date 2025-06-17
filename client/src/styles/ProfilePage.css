@@ -1,0 +1,99 @@
+/* Kontainer utama */
+.profile-page-container {
+    background-color: #d9d9d9;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Header atas */
+  .profile-header {
+    background-color: #d9d9d9;
+    border-bottom: 2px solid #c0c0c0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  /* Icon Profil */
+  .profile-icon img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Menu tab */
+  .profile-menu {
+    display: flex;
+    margin-left: 20px;
+    flex-grow: 1;
+    gap: 20px;
+  }
+  
+  /* Tombol tab */
+  .profile-tab {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-family: monospace;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 20px;
+  }
+  
+  .profile-tab.active {
+    background-color: white;
+  }
+  
+  /* Area konten */
+  .profile-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  /* Card */
+  .profile-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  /* Icon di dalam card */
+  .profile-card-icon img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  /* Isi teks di dalam card */
+  .profile-card-content h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .profile-card-content p {
+    margin: 10px 0 20px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Tombol Edit Profil */
+  .edit-profile-button {
+    background-color: #ff7300;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
