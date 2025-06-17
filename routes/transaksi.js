@@ -6,11 +6,11 @@ const Transaksi= require('../models/transaksi');
 // === ROUTE GET UNTUK NOTIFIKASI ===
 router.get('/', async (req, res) => {
   try {
-    const transaksi = await Transaksi.findAll(); // ambil semua data transaksi
-    res.json(transaksi);
+    const transaksi = await Transaksi.findAll();
+    res.status(200).json(transaksi);
   } catch (err) {
     console.error('Gagal mengambil data transaksi:', err);
-    res.status(500).json({ message: 'Gagal mengambil data transaksi', error: err.message });
+    res.status(500).json({ message: 'Gagal ambil transaksi' });
   }
 });
 
