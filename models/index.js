@@ -1,6 +1,6 @@
 const { sequelize } = require('../config/db');
 
-const User = require('./user');
+const User = require('./users');
 const Karya = require('./karya');
 const Transaksi = require('./transaksi');
 const Download = require('./download');
