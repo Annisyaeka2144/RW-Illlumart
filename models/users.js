@@ -25,10 +25,11 @@ const User = sequelize.define('User', {
     allowNull: false,
   },
   role: {
-    type: DataTypes.ENUM('pembeli', 'admin'),
+    type: DataTypes.ENUM('pembeli', 'admin', 'user'),
     allowNull: false,
     defaultValue: 'pembeli',
   }
+
 }, {
   tableName: 'users',
   timestamps: true,
