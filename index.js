@@ -27,7 +27,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/karya', karyaRoutes);
 app.use('/api/transaksi', transaksiRoutes);
 app.use('/api/download', downloadRoutes);
-
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 // Test route
 app.get('/test', (req, res) => res.send('Server hidup ✅'));
 
