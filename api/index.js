@@ -16,18 +16,27 @@ models.sequelize.sync({ alter: true })
 app.use(cors());
 app.use(express.json());
 
-// Comment semua dulu
-// const authRoutes = require('../routes/auth');
-// const karyaRoutes = require('../routes/karya');
-// const transaksiRoutes = require('../routes/transaksi');
-// const downloadRoutes = require('../routes/download');
+// API Routes
+const authRoutes = require('../routes/auth');
+const karyaRoutes = require('../routes/karya');
+const transaksiRoutes = require('../routes/transaksi');
+const downloadRoutes = require('../routes/download');
 
-// app.use('/api/auth', authRoutes);
-// app.use('/api/karya', karyaRoutes);
-// app.use('/api/transaksi', transaksiRoutes);
-// app.use('/api/download', downloadRoutes);
+app.use('/api/auth', authRoutes);
+app.use('/api/karya', karyaRoutes);
+app.use('/api/transaksi', transaksiRoutes);
+app.use('/api/download', downloadRoutes);
 
+// Test route
 app.get('/test', (req, res) => res.send('Server hidup ✅'));
+
+// Serve frontend
+const clientPath = path.join(__dirname, '../client/build');
+app.use(express.static(clientPath));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(clientPath, 'index.html'));
+});
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
