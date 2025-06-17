@@ -1,6 +1,5 @@
 const { DataTypes } = require('sequelize');
 const { sequelize } = require('../config/db');
-const Karya = require('./karya');
 
 const Download = sequelize.define('Download', {
   id: {
@@ -28,8 +27,5 @@ const Download = sequelize.define('Download', {
   tableName: 'downloads',
   timestamps: true,
 });
-
-// Relasi: Download -> Karya
-Download.belongsTo(Karya, { foreignKey: 'karyaId', as: 'karya' });
 
 module.exports = Download;
