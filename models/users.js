@@ -1,11 +1,17 @@
 const { DataTypes } = require('sequelize');
 const { sequelize } = require('../config/db');
+const bcrypt = require('bcryptjs');
 
-const User = sequelize.define('User', {
+// Definisikan model untuk tabel 'users'
+const User = sequelize.define('Users', {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
     autoIncrement: true,
+  },
+  role: {
+    type: DataTypes.ENUM('pembeli', 'penjual'),
+    allowNull: false, // Validasi agar role tidak boleh null
   },
   nama: {
     type: DataTypes.STRING,
@@ -24,15 +30,17 @@ const User = sequelize.define('User', {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  role: {
-    type: DataTypes.ENUM('pembeli', 'admin', 'user'),
-    allowNull: false,
-    defaultValue: 'pembeli',
-  }
+});
 
-}, {
-  tableName: 'users',
-  timestamps: true,
+// Enkripsi password sebelum disimpan ke database
+User.beforeCreate(async (user) => {
+  if (user.password) {
+    user.password = await bcrypt.hash(user.password, 10); // Enkripsi password
+  }
+});
+
+sequelize.sync().then(() => {
+  console.log("Tabel 'Users' telah berhasil dibuat!");
 });
 
 module.exports = User;
